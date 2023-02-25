@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Just For You</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body style="background-color: white;">
+        <img src="./image.jpeg">
+        <embed name="GoodEnough" src="./audio.mp3" loop="false" hidden="true" autostart="true">
+          <audio id="myAudio"
+           <source src="./audio.mp3" type='audio/mp4/mp3'>
+           Your user agent does not support the HTML5 Audio element.
+          </audio>
+        <div id="div2" onclick="aud_play_pause()">🖤</div>
+
+        <!-- <embed name="GoodEnough" src="Happy_Birthday_Song.mp3" loop="false" hidden="true" autostart="true">
+            <audio id="myAudio"
+             <source src="Happy_Birthday_Song.mp3"
+                     type='audio/mp4'>
+             Your user agent does not support the HTML5 Audio element.
+            </audio><center><button type="button" onclick="aud_play_pause()">Play</button></center> -->
+
+            <script>
+                function aud_play_pause() {
+                  var myAudio = document.getElementById("myAudio");
+                  if (myAudio.paused) {
+                    myAudio.play();
+                  } else {
+                    myAudio.pause();
+                  }
+                }
+                </script>
+	</body>
+</html>

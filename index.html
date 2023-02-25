@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Just For You</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+        <div id="div1">
+            <h1>Password Please!🥰</h1>
+        </div>
+        <input type="password" id="pass">
+        <button id="pass" onclick="passfn()">Okaay</button>
+	</body>
+    <script>
+        function passfn() {
+          var pass = document.getElementById("pass").value;
+          console.log(pass);
+          if (pass=="23669532") {
+            console.log(pass);
+            window.location.href = "./page2.html";
+          } else {
+            alert("Oops!!😠")
+          }
+        }
+        </script>
+</html>
